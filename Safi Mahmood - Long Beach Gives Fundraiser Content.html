@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            transition: background-color 0.3s;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Content Section Styles */
+        #content {
+            background-color: #fff;
+            color: #333;
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .video-container {
+            display: flex; /* Display videos in a row */
+            flex-wrap: nowrap; /* Prevent items from wrapping to the next row */
+            overflow-x: auto; /* Add horizontal scrollbar if needed */
+        }
+
+        .work-sample {
+            flex: 0 0 auto; /* Allow video containers to grow as needed */
+            margin: 10px; /* Add margin between video containers */
+            padding: 20px; /* Increased padding for better aesthetics */
+            border: 1px solid #ccc;
+            text-align: center;
+            box-sizing: border-box; /* Ensure padding and border don't affect container size */
+            width: 400px; /* Set a fixed width for each video container */
+            min-width: 400px; /* Minimum width to prevent shrinking */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box-shadow */
+        }
+
+        .work-sample h2 {
+            font-size: 18px; /* Larger font size for titles */
+            margin-bottom: 10px;
+            color: #fff; /* White text color for headers */
+        }
+
+        .work-sample .header-bg {
+            background-color: #007BFF; /* Blue background color for the header part */
+            padding: 10px; /* Adjust padding as needed */
+        }
+
+        .work-sample iframe {
+            max-width: 100%;
+            height: 700px; /* Adjust the height to 700px */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Animations */
+        /* Change navigation background on scroll */
+        body.scrolling header {
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+        <!-- Your HTML content here -->
+
+    <header>
+        <!-- Navigation (You can add a logo here if you have one) -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Safi Mahmood</h1>
+            <p>Aspiring Digital Marketer and CSULB Student</p>
+        </div>
+    </section>
+
+    <!-- Content Section (We'll populate this section with your work) -->
+    <section id="content" class="section">
+        <div class="container">
+            <h1>Long Beach Gives Campaign</h1>
+            <p>Long Beach Gives is a local fundraiser where nonprofit organizations try to raise as much money as possible within a week. My job was to promote it through various means, including social media. I was active throughout the whole process, including creating the script, filming, editing, and posting on Meta. Here is some of that content I worked on to promote this event:</p>
+
+            <!-- Video Container -->
+            <div id="video-container" class="video-container">
+                <!-- Instagram Video 1 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives Begins</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/CxMenf3PIL-/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+                
+                <!-- Instagram Video 2 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives Spanish</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/CxZWdQEJyIO/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+                
+                <!-- Instagram Video 3 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives Last Day</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/CxdG0MlvAIa/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+                
+                <!-- Instagram Video 4 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives Starts Tomorrow</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/CxKHhw5Pj3G/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+             
+                <!-- Instagram Video 5 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives in 5 Days</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/Cw_vwSKp3-r/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+                
+                <!-- Instagram Video 6 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives in 1 Week</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/Cw6s40ZtxZM/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+             
+                <!-- Instagram Video 7 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>Long Beach Gives in 2 Days</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/CxH37cOvvMl/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+
+                <!-- Instagram Video 8 -->
+                <div class="work-sample">
+                    <div class="header-bg">
+                        <h2>How to Start a Fundraiser</h2>
+                    </div>
+                    <iframe src="https://www.instagram.com/reel/CwjD75KgAho/embed" frameborder="0" width="500" height="700" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Email: safimahmood55@gmail.com | 562-412-9199</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Safi Mahmood. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
